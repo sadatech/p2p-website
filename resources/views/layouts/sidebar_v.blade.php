@@ -1,8 +1,9 @@
-<div class="headerBottomArea">
+
+<div class="headerBottomArea" data-spy="affix" data-offset-top="100">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-3 col-xs-9">
-				<a href="{{URL::to('')}}" class="logo"><img src="{{ asset('img/p2plogo.png') }}" alt=""></a>
+				<a href="{{URL::to('')}}"><img src="{{ asset('img/logo_p2p.png') }}" alt=""></a>
 			</div>
 			<div class="col-md-9 menuCol col-sm-9 col-xs-12">
 				<div class="navbar-header">
@@ -16,12 +17,12 @@
 						@foreach ($menu as $key => $value)
 						@if($value->parent_id == 0)
 						@php
-							$submenu = App\Menu::where('parent_id', $value->id)->get();
-							if(count($submenu)){
-								$dropdown_toggle = "sub-menu";
-							}else{
-								$dropdown_toggle = "";
-							}
+						$submenu = App\Menu::where('parent_id', $value->id)->get();
+						if(count($submenu)){
+							$dropdown_toggle = "sub-menu";
+						}else{
+							$dropdown_toggle = "";
+						}
 						@endphp
 						<li class="{{ (!Request::is(@$value->slug)) ? : 'current-menu-item' }}" id="link">
 							<a class="" href="{{ URL::to($value->slug) }}">
@@ -29,9 +30,9 @@
 							</a>
 							<ul class="{{ @$dropdown_toggle }}">
 								@foreach($submenu as $menusub)
-								    <li>
-								    	<a href="{{ URL::to($value->slug.'/'.$menusub->slug) }}">{{ $menusub->menu_name }}</a>
-								    </li>
+								<li>
+									<a style="color:#000;" href="{{ URL::to($value->slug.'/'.$menusub->slug) }}">{{ $menusub->menu_name }}</a>
+								</li>
 								@endforeach
 							</ul>
 						</li>

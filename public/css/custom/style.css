@@ -4328,11 +4328,11 @@ header .topInfo li.clientAreaLi span {
 }
 
 header .headerTopArea {
-	border-bottom: 1px solid #ebebeb
+	/*border-bottom: 1px solid #ebebeb*/
 }
 
 .v2 header .headerTopArea {
-	background: #288feb
+	background: #6869AD
 }
 
 header .logo {
@@ -4347,8 +4347,9 @@ header .logo img {
 }
 
 header .headerBottomArea {
-	padding: 30px 0;
-	border-bottom: 1px solid #eaeaea;
+	background: #6869AD;
+	padding: 10px 0;
+	/*border-bottom: 1px solid #eaeaea;*/
 }
 
 header nav#navbar {
@@ -4366,9 +4367,12 @@ header nav#navbar ul > li {
 	display: inline-block;
 	position: relative
 }
-
+.paral {
+    min-height: 700px;
+    background: transparent;
+}
 header nav#navbar ul > li > a {
-	color: #9aadbf;
+	color: #EEE;
 	display: inline-block;
 	font-size: 13px;
 	line-height: 37px;
@@ -4431,7 +4435,7 @@ header nav#navbar ul.sub-menu > li.subPar > a:after {
 
 	
 	header nav#navbar > ul {
-		border-right: 1px solid #e4e9f0;
+		/*border-right: 1px solid #e4e9f0;*/
 	}
 	header nav#navbar ul > li::before {
 		background: transparent;
@@ -4721,7 +4725,7 @@ header nav#navbar ul > li.dropdown-megamenu:hover::before {
 	}
 	.sub-menu {
 		background: #192C41;
-		border-left: 5px solid #288feb;
+		border-left: 5px solid #6869AD;
 		display: none
 	}
 	.sub-menu .sub-menu {
@@ -4736,7 +4740,7 @@ header nav#navbar ul > li.dropdown-megamenu:hover::before {
 		margin: 0;
 	}
 	.navbar-toggle {
-		color: #288feb;
+		color: #6869AD;
 		font-size: 20px;
 		margin: 0;
 		padding-right: 0;
@@ -4761,7 +4765,7 @@ header nav#navbar ul > li.dropdown-megamenu:hover::before {
 	}
 	/*	mega-menu responsive*/
 	header nav#navbar ul > li.dropdown-megamenu .mega-menu {
-		background: #288feb none repeat scroll 0 0;
+		background: #6869AD none repeat scroll 0 0;
 		padding: 20px 0 5px;
 		position: static;
 		right: 0;
@@ -4981,7 +4985,7 @@ header a.cart i {
 
 .homeContent {
 	color: #fff;
-	padding: 140px 0
+	padding: 50px 0;
 }
 
 .homeContent span.topTxt {
@@ -5018,7 +5022,7 @@ header a.cart i {
 
 
 .homeSlider1 .owl-nav div i{
-  background: #288feb none repeat scroll 0 0;
+  background: #6869AD none repeat scroll 0 0;
   color: #fff;
   font-size: 17px;
   height: 30px;
@@ -7088,8 +7092,9 @@ span.closeIcon:hover {
 
 .singlePost .postContent {
 	background: #f6fbff none repeat scroll 0 0;
-	border: 1px solid #e8edf2;
+	border: 3px solid #6869AD;
 	color: #8894a1;
+	text-align: center;
 	font-size: 14px;
 	padding: 30px 25px;
     line-height: 25px;
@@ -7104,8 +7109,9 @@ span.closeIcon:hover {
 
 .singlePost .postDate {
 	display: block;
+	font-size: 50px;
+	padding: 50px;
 	line-height: 14px;
-	margin-bottom: 25px;
 }
 
 .singlePost .postImg {
@@ -7343,22 +7349,22 @@ article.singleBlog {
 
 .commentInput > *::-webkit-input-placeholder {
 	/* Chrome/Opera/Safari */
-	color: #288feb;
+	color: #6869AD;
 }
 
 .commentInput > *::-moz-placeholder {
 	/* Firefox 19+ */
-	color: #288feb;
+	color: #6869AD;
 }
 
 .commentInput > *:-ms-input-placeholder {
 	/* IE 10+ */
-	color: #288feb;
+	color: #6869AD;
 }
 
 .commentInput > *:-moz-placeholder {
 	/* Firefox 18- */
-	color: #288feb;
+	color: #6869AD;
 }
 
 
@@ -7697,7 +7703,7 @@ dl.accordion {
 }
 
 .comingContent .h1 {
-	color: #288feb;
+	color: #6869AD;
 	font-family: "proxima_nova_rgbold";
 	font-size: 68px;
 	line-height: 65px;
@@ -7834,14 +7840,14 @@ header a.cart .count,
 .supportInput > input[type="submit"],
 .eSearchForm > input[type="submit"],
 .subsForm > input[type="submit"] {
-	background: #288feb;
+	background: #6869AD;
 	color: #fff;
 }
 
 .v2 header .topInfo li.clientAreaLi span,
 .v2 header .langIcon,
 .boardMenu li.active a {
-	background: #1f80d7;
+	background: #6869AD;
 	color: #fff
 }
 
@@ -7907,7 +7913,7 @@ span.closeIcon,
 .fileInput:hover:before,
 .h1.errorTitle,
 .errorContent > a:hover {
-	color: #288feb
+	color: #6869AD
 }
 
 .singlePrice.active,
@@ -7920,7 +7926,7 @@ span.closeIcon,
 .supportInput textarea:focus,
 .eSearchForm > input:focus,
 .subsForm > input:focus {
-	box-shadow: 0 0 2px #288feb;
+	box-shadow: 0 0 2px #6869AD;
 }
 
 
@@ -7947,27 +7953,27 @@ header nav#navbar ul > li.dropdown-megamenu .mega-menu,
 .supportInput textarea:focus,
 .eSearchForm > input:focus,
 .subsForm > input:focus {
-	border-color: #288feb;
+	border-color: #6869AD;
 }
 
 #nav > li > ul.sub-menu li {
-	border-right-color: #288feb
+	border-right-color: #6869AD
 }
 
 #nav > li > ul.sub-menu li,
 .regDomains > li:hover {
-	border-left-color: #288feb
+	border-left-color: #6869AD
 }
 
 #nav > li ul.sub-menu li:first-child {
-	border-top-color: #288feb
+	border-top-color: #6869AD
 }
 
 #nav > li ul.sub-menu li:last-child,
 #nav > li ul.sub-menu li:last-child,
 .subPar > a::before,
 .availableDomain.clearfix {
-	border-bottom-color: #288feb
+	border-bottom-color: #6869AD
 }
 
 .v2 .homeArea {
@@ -7990,7 +7996,7 @@ header .topInfo li.clientAreaLi span:hover,
 .commentInput > input[type="submit"]:hover,
 .eSearchForm > input[type="submit"]:hover,
 .subsForm > input[type="submit"]:hover {
-	background: #3FA5FF;
+	background: #6869AD;
 }
 
 .homeBtn a.btnOne:hover,
@@ -7998,7 +8004,7 @@ header .topInfo li.clientAreaLi span:hover,
 .v2 .domainBtn:hover,
 .domainCta .Btn.ctaBtn:hover,
 .couponForm > button:hover {
-	background: #365272;
+	background: #6869AD;
 }
 
 .homeBtn a.btnTwo:hover,

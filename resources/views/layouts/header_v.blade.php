@@ -17,32 +17,35 @@
 		<link rel="stylesheet" href="{{ asset('css/custom/style.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/responsive/responsive.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/pace.css') }}">
-
-		@yield('additional-css')
-		<style type="text/css">
-			.parallax-window {
-			    min-height: 500px;
-			    background: transparent;
-			}
-		</style>
+        @yield('additional-css')
+        <style type="text/css">
+            .paral {
+                min-height: 700px;
+                background: transparent;
+            }
+            .affix {
+                top: 0;
+                width: 100%;
+            }
+        </style>
 		<script src="{{ asset('vendor/modernizr/modernizr.js') }}"></script>
 	</head>
 	<body class="home v2">
 		<div class="body">
-			<header>
+		<header>
     	<div class="headerTopArea">
     		<div class="container">
     			<div class="row">
     				<div class="col-md-5 col-sm-3 col-xs-5">
-    					<div class="langOpt">
-    						<span class="langTxt">Language: &nbsp;</span>
-    						<span class="langIcon"><span class="langCode">en</span><i class="icofont icofont-caret-down"></i> </span>
-    						<ul class="lang">
-    							<li data-code="en">english</li>
-    							<li data-code="bn">bengali</li>
-    							<li data-code="ar">aribic</li>
-    							<li data-code="da">dansk</li>
-    						</ul>
+                        <div class="langOpt">
+                            <span class="langTxt">Language: &nbsp;</span>
+                            <span class="langIcon"><span class="langCode">en</span><i class="icofont icofont-caret-down"></i> </span>
+                            <ul class="lang">
+                            <li data-code="en">english</li>
+                            <li data-code="bn">bengali</li>
+                            <li data-code="ar">aribic</li>
+                            <li data-code="da">dansk</li>
+                            </ul>
     					</div>
     				</div>
     				<div class="col-md-7 col-sm-9 col-xs-7">

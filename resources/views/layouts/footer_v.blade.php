@@ -82,6 +82,8 @@
 		<script src="{{ asset('js/active.js') }}"></script>
 		<script src="{{ asset('js/pace.js') }}"></script>
 		<script src="{{ asset('lib/ckeditor/ckeditor.js') }}"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.8/vue.js"></script>
 		@yield('additional-script')
 	</body>
 </html>
