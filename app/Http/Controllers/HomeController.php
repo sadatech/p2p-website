@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Menu;
 use App\Content;
 use App\SubMenu;
@@ -10,20 +11,26 @@ class HomeController extends Controller
 {
     public function index($slug = null,$id = null)
     {
-    	($id == null) ? $slug_segment = $slug : $slug_segment = $id;
-    	$menu = Menu::where('parent_id',0)->get();
-    	if ($slug != null || $id != null) {
-    		$search_menu_id = Menu::where('slug',$slug_segment)->first();
-	    	$content = Content::where('menu_id',$search_menu_id->id)->get();
+        ($id == null) ? $slug_segment = $slug : $slug_segment = $id;
+        $menu = Menu::where('parent_id',0)->get();
+        if ($slug != null || $id != null) {
+            $search_menu_id = Menu::where('slug',$slug_segment)->first();
+            $content = Content::where('menu_id',$search_menu_id->id)->get();
 
-	    	return view('pages.index_v' ,compact('menu','content','search_menu_id'));
+            return view('pages.index_v' ,compact('menu','content','search_menu_id'));
             return $search_menu_id;
 
-    	}else{
+        }else{
 
-	    	return view('home_v' ,compact('menu'));
-    	
-    	}
+            return view('home_v' ,compact('menu'));
+        
+        }
+    }
+    public function register()
+    {
+        $menu = Menu::where('parent_id',0)->get();
+        $menu_all = Menu::get();
+        return view('pages.register_v' ,compact('menu','menu_all'));
     }
     public function ckeditor()
     {
@@ -43,5 +50,4 @@ class HomeController extends Controller
 
         $content->save();
         return view('pages.ckeditor_v' ,compact('menu','menu_all'));
-    }
-}
+    }}

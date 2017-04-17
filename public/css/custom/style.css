@@ -4339,7 +4339,7 @@ header .logo {
 	display: inline-block;
 	height: 37px;
 	position: relative;
-	z-index: 9
+	z-index: 999;
 }
 
 header .logo img {
@@ -4349,6 +4349,7 @@ header .logo img {
 header .headerBottomArea {
 	background: #6869AD;
 	padding: 10px 0;
+	z-index: 999;
 	/*border-bottom: 1px solid #eaeaea;*/
 }
 
@@ -5706,7 +5707,8 @@ form.domainForm {
 */
 
 .clientArea {
-	background: #f0f5fa
+	background: #DDD;
+	margin-top: 100px;
 }
 
 .singleClient {
@@ -5714,8 +5716,8 @@ form.domainForm {
 }
 
 .v2 .clientArea {
-	background: #fff;
-	padding: 60px 0
+	background: #DDD;
+	padding: 60px;
 }
 
 .singleTst {

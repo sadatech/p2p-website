@@ -1,6 +1,7 @@
 @extends('layouts.app_v')
 
 @section('content')
+<br></br>
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
@@ -16,4 +17,50 @@
 		</div>
 	</div>
 </div>
+<div class="clientArea" style="opacity: 1;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectionTitle">
+                        <div class="h2">We give <span>awesome service,</span><br>Some of our trusted clients.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-md-4 col-sm-6">
+    				<div class="singlePost">
+    					<div class="postContent" style="border:solid 0px #000;background: transparent;">
+	    					<div><img src="{{ asset('img/icon/p2p01.svg') }}" width="300" height="100"></div>
+    						<a href="#" class="postTitle h4">Easy Entry</a>
+    						<div class="postExcerpt">
+    							<p>Dengan proses aplikasi yang simpel—100% online—Anda dapat mulai mendanai dari Rp 5.000.000 untuk Business Loan dan Rp 1.000.000 untuk Employee Loan.</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 col-sm-6">
+    				<div class="singlePost">
+    					<div class="postContent" style="border:solid 0px #000;background: transparent;">
+	    					<div style="padding: 30px;"><img src="{{ asset('img/icon/p2p02.svg') }}"></div>
+    						<a href="#" class="postTitle h4">Return yang Atraktif</a>
+    						<div class="postExcerpt">
+    							<p>Lender akan langsung menerima bunga yang dibayarkan oleh Borrower tanpa beban biaya apapun.</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 col-sm-6">
+    				<div class="singlePost">
+    					<div class="postContent" style="border:solid 0px #000;background: transparent;">
+	    					<div style="padding: 30px;"><img src="{{ asset('img/icon/icon-entry.png') }}"></div>
+    						<a href="#" class="postTitle h4">Risiko Terukur<br></a>
+    						<div class="postExcerpt">
+    							<p>Analisis komprehensif terhadap invoice yang diajukan oleh Calon Borrower. Pendanaannya pun dijamin berkualitas.</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -64,7 +64,7 @@
     							<div class="h5">Forgot Passsword? <a href="#">Click here</a></div>
     							<div class="logBtm">
     								<div class="h5">Don’t have an account yet?</div>
-    								<a href="#" class="signUp">Click here to sign up.</a>
+    								<a href="{{ URL::to('register') }}" class="signUp">Click here to sign up.</a>
     							</div>
     						</form>
     					</div>

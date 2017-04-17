@@ -10,8 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Auth::routes();
 
 Route::get('/', 'HomeController@index');
+Route::get('register', 'HomeController@register');
 Route::get('ckeditor', 'HomeController@ckeditor');
 Route::post('ckeditor/addContent', 'HomeController@addContent');
 
@@ -19,3 +21,5 @@ Route::get('/{slug}/{id}', ['uses' => 'HomeController@index'])
 	->where('id', '[\w\d\-\_]+');
 Route::get('/{slug}', ['uses' => 'HomeController@index'])
 	->where('slug', '[\w\d\-\_]+');
+
+Route::get('/home', 'HomeController@index');
